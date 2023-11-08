@@ -18,7 +18,7 @@
     <main>
         <section>
             <h2>About Me</h2>
-            <p>I will update the contents soon.</p>
+            <p>Junior Computer Science major with an Astrophysics minor - Programmer.</p>
         </section>
 
         <section>
@@ -29,34 +29,27 @@
         <section>
             <h2>Contact Information</h2>
             <p>Email: <a href="mailto:sheevp123@gmail.com">sheevp123@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sheevpatel/" target="_blank">Sheev Patel</a></p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Sheev Patel. All rights reserved.</p>
     </footer>
-<!-- index.html -->
 
-<!-- Your existing HTML content -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const body = document.body;
+            const colors = ['#ff7e5f', '#5f4b8b', '#70a1ff', '#2ecc71', '#f39c12']; // Add your preferred colors
 
-<script>
-    // JavaScript for dynamic background effect
-    document.addEventListener("DOMContentLoaded", function () {
-        const body = document.body;
-        const colors = ['#ff7e5f', '#5f4b8b', '#70a1ff', '#2ecc71', '#f39c12']; // Add your preferred colors
+            function changeBackgroundColor() {
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                body.style.backgroundColor = randomColor;
+            }
 
-        function changeBackgroundColor() {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            body.style.backgroundColor = randomColor;
-        }
-
-        setInterval(changeBackgroundColor, 3000); // Change color every 3 seconds (adjust as needed)
-    });
-</script>
-</body>
-
-</html>
-
+            setInterval(changeBackgroundColor, 3000); // Change color every 3 seconds (adjust as needed)
+        });
+    </script>
 </body>
 
 </html>
