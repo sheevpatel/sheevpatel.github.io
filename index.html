@@ -35,6 +35,27 @@
     <footer>
         <p>&copy; 2023 Sheev Patel. All rights reserved.</p>
     </footer>
+<!-- index.html -->
+
+<!-- Your existing HTML content -->
+
+<script>
+    // JavaScript for dynamic background effect
+    document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
+        const colors = ['#ff7e5f', '#5f4b8b', '#70a1ff', '#2ecc71', '#f39c12']; // Add your preferred colors
+
+        function changeBackgroundColor() {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            body.style.backgroundColor = randomColor;
+        }
+
+        setInterval(changeBackgroundColor, 3000); // Change color every 3 seconds (adjust as needed)
+    });
+</script>
+</body>
+
+</html>
 
 </body>
 
