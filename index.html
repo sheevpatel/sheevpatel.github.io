@@ -35,37 +35,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Sheev Patel. All rights reserved.</p>
+        <p>&copy; 2023 Sheev Patel.</p>
     </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const body = document.body;
-
-            for (let i = 0; i < 10; i++) {
-                createAtom();
-            }
-
-            function createAtom() {
-                const atom = document.createElement('div');
-                atom.className = 'atom';
-                body.appendChild(atom);
-
-                const size = Math.random() * 20 + 10;
-                const speed = Math.random() * 2 + 1;
-
-                atom.style.width = `${size}px`;
-                atom.style.height = `${size}px`;
-                atom.style.animationDuration = `${10 / speed}s`;
-
-                const initialPosition = Math.random() * 100;
-                atom.style.left = `${initialPosition}vw`;
-
-                atom.addEventListener('animationiteration', () => {
-                    const newPosition = Math.random() * 100;
-                    atom.style.left = `${newPosition}vw`;
-                });
-            }
+            // If you decide to add any future JavaScript, you can include it here.
         });
     </script>
 </body>
