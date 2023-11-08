@@ -30,7 +30,7 @@
         <section>
             <h2>Contact Information</h2>
             <p>Email: <a href="mailto:sheevp123@gmail.com">sheevp123@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sheevpatel/" target="_blank">Sheev Patel</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sheevpatel/" target="_blank">https://www.linkedin.com/in/sheevpatel/</a></p>
         </section>
     </main>
 
@@ -41,14 +41,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const body = document.body;
-            const colors = ['#ff7e5f', '#5f4b8b', '#70a1ff', '#2ecc71', '#f39c12']; // Add your preferred colors
+            let hue = 0;
 
             function changeBackgroundColor() {
-                const randomColor = colors[Math.floor(Math.random() * colors.length)];
-                body.style.backgroundColor = randomColor;
+                body.style.background = `linear-gradient(to right, hsl(${hue}, 100%, 50%), hsl(${hue + 60}, 100%, 50%), hsl(${hue + 120}, 100%, 50%), hsl(${hue + 180}, 100%, 50%), hsl(${hue + 240}, 100%, 50%), hsl(${hue + 300}, 100%, 50%))`;
+                hue = (hue + 1) % 360;
             }
 
-            setInterval(changeBackgroundColor, 3000); // Change color every 3 seconds (adjust as needed)
+            setInterval(changeBackgroundColor, 50); // Change color every 50 milliseconds for a smooth effect
         });
     </script>
 </body>
