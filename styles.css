@@ -39,6 +39,8 @@ footer {
 
 /* styles.css */
 
+/* styles.css */
+
 /* Add these styles to create the atom animation */
 @keyframes atomAnimation {
     to {
@@ -52,5 +54,7 @@ footer {
     border-radius: 50%;
     transform-origin: center bottom;
     animation: atomAnimation linear infinite;
+    z-index: 9999; /* Ensure atoms appear above other elements */
 }
+
 
