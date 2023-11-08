@@ -19,7 +19,7 @@
         <section>
             <h2>About Me</h2>
             <p>Pursuing a B.S. in Computer Science with an Astrophysics minor</p>
-            <p>Programmer - experience in data analytics & quantum computing,  </p>
+            <p>Programmer - experience in data analytics & quantum computing</p>
         </section>
 
         <section>
@@ -41,14 +41,31 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const body = document.body;
-            let hue = 0;
 
-            function changeBackgroundColor() {
-                body.style.background = `linear-gradient(to right, hsl(${hue}, 100%, 50%), hsl(${hue + 60}, 100%, 50%), hsl(${hue + 120}, 100%, 50%), hsl(${hue + 180}, 100%, 50%), hsl(${hue + 240}, 100%, 50%), hsl(${hue + 300}, 100%, 50%))`;
-                hue = (hue + 1) % 360;
+            for (let i = 0; i < 10; i++) {
+                createAtom();
             }
 
-            setInterval(changeBackgroundColor, 50); // Change color every 50 milliseconds for a smooth effect
+            function createAtom() {
+                const atom = document.createElement('div');
+                atom.className = 'atom';
+                body.appendChild(atom);
+
+                const size = Math.random() * 20 + 10;
+                const speed = Math.random() * 2 + 1;
+
+                atom.style.width = `${size}px`;
+                atom.style.height = `${size}px`;
+                atom.style.animationDuration = `${10 / speed}s`;
+
+                const initialPosition = Math.random() * 100;
+                atom.style.left = `${initialPosition}vw`;
+
+                atom.addEventListener('animationiteration', () => {
+                    const newPosition = Math.random() * 100;
+                    atom.style.left = `${newPosition}vw`;
+                });
+            }
         });
     </script>
 </body>
