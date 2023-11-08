@@ -31,6 +31,23 @@ section {
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+/* Tetris logo box styling */
+.about-me-container {
+    position: relative;
+}
+
+.tetris-logo-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.tetris-logo-box img {
+    width: 50px;
 }
 
 footer {
@@ -40,7 +57,6 @@ footer {
     text-align: center;
 }
 
-/* Add a continuous rotation effect to the header */
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -51,10 +67,9 @@ footer {
 }
 
 header {
-    animation: rotate 10s linear infinite; /* Apply rotation animation */
+    animation: rotate 10s linear infinite;
 }
 
-/* Add these styles to create the star animation */
 @keyframes twinkle {
     0% {
         opacity: 0.8;
