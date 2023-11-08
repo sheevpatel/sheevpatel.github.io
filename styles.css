@@ -56,5 +56,27 @@ footer {
     animation: atomAnimation linear infinite;
     z-index: 9999; /* Ensure atoms appear above other elements */
 }
+/* styles.css */
+
+/* Add a continuous rotation effect to the header */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: rotate 10s linear infinite; /* Apply rotation animation */
+}
+
 
 
