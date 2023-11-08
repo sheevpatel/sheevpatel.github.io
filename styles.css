@@ -36,3 +36,21 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* styles.css */
+
+/* Add these styles to create the atom animation */
+@keyframes atomAnimation {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.atom {
+    position: absolute;
+    background-color: #3498db;
+    border-radius: 50%;
+    transform-origin: center bottom;
+    animation: atomAnimation linear infinite;
+}
+
