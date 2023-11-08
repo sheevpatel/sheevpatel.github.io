@@ -6,7 +6,7 @@ body {
     margin: 0;
     overflow: auto;
     animation: gradientAnimation 10s infinite;
-    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    background: linear-gradient(to right, #333333, #000000);
 }
 
 header {
