@@ -34,21 +34,7 @@ section {
     position: relative;
 }
 
-/* Tetris logo box styling */
-.about-me-container {
-    position: relative;
-}
 
-.tetris-logo-box {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.tetris-logo-box img {
-    width: 10px;
-}
 
 footer {
     background-color: #007bff;
