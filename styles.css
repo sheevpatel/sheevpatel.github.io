@@ -2,8 +2,10 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
 }
 
 header {
@@ -37,27 +39,6 @@ footer {
     text-align: center;
 }
 
-/* styles.css */
-
-/* styles.css */
-
-/* Add these styles to create the atom animation */
-@keyframes atomAnimation {
-    to {
-        transform: translateY(100vh);
-    }
-}
-
-.atom {
-    position: absolute;
-    background-color: #3498db;
-    border-radius: 50%;
-    transform-origin: center bottom;
-    animation: atomAnimation linear infinite;
-    z-index: 9999; /* Ensure atoms appear above other elements */
-}
-/* styles.css */
-
 /* Add a continuous rotation effect to the header */
 @keyframes rotate {
     0% {
@@ -69,14 +50,5 @@ footer {
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: rotate 10s linear infinite; /* Apply rotation animation */
 }
-
-
-
