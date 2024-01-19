@@ -53,7 +53,7 @@ footer {
 }
 
 header {
-    animation: rotate 10s linear infinite;
+    animation: rotate 8s linear infinite;
 }
 
 @keyframes twinkle {
@@ -79,4 +79,21 @@ body::before {
     opacity: 0.8;
     pointer-events: none;
     animation: twinkle 5s infinite;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content,
+.additional-content {
+    width: 78%; /* Adjust the width as needed, leaving some space for margin */
+}
+
+.skills-content {
+    margin-right: 0%; /* Add a small margin between the two sections */
+}
+.about-section, .education-section, .contact-section{
+    border:thick double #0056b3;
 }
