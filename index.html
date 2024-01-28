@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Universe-Log.png" type="image/png">
     <title>Sheev R. Patel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Universe-Log.png" type="image/png">
 </head>
-
 <body>
-
-    <header>
-        <h1>Sheev Patel</h1>
-        <p> This website is my digital portfolio</p>
-        <p> <a href="https://github.com/sheevpatel">Check out my GitHub</a></p>
-    </header>
-
-    <main>
+    <nav>
+        <p><a href = "./contact.html">Contact Sheev</a></p>
+    </nav>
+    <section class = "general-info">
+        <h1>Sheev R. Patel</h1>
+        <h2>Student at the University of Georgia</h2>
+        <img src = "images/solarsystem.gif" alt ="Galaxy" class = "GalaxyLeft" width=20%>
+        <img src = "images/2-2-galaxy-transparent.png" alt ="Galaxy" class = "central" width = 20%>
+        <hr>
+    </section>
+    <section class = "content">
+        <img src="images/headshot.jpg" alt="Headshot" class = "headshot" width = 20% >
+        <h2>Hello</h2>
+        <p>I am a computer science student interested in software engineering within the realm of astronomy and astrophysics. </p>
+        <hr>
         <h2>About Sheev</h2>
-        <section class="about-section">
-            
-            <div class="skills-content">
-                
-                <h3>Languages</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>C/C++</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="additional-content">
-                <h3>Experience</h3>
-                <dl>
-                    <dt>May 2023 - July 2023</dt>
-                    <dd>Software Developer & Data Analyst Intern at <a href="https://georgiadogs.com/sports/football">UGA Football</a></dd>
-                    <dt>September 2023 - December 2023</dt>
-                    <dd>Quantum Computing Research Intern at <a href="https://www.csp.uga.edu/">UGA CSP</a></dd>
-                    <dt>June 2024 - August 2024</dt>
-                    <dd>Artificial Intelligence Software Engineer at <a href="https://www.robins.af.mil/">United States Air Force</a></dd>
-                </dl>
-            </div>
-        </section>
+        <div class = "three-col">
+        <div class = "card">
+        <img src = "images/Languages.png" alt = "Languages" class = "LangPic" width = 100% height="150">
+        <h3>Languages</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>Html/Css</li>            
+            </ul>
+        </div>
         
-        <h2>Education</h2>
-        <section class = "education-section">
-            
-            <p>Pursuing a B.S. in Computer Science with an Astrophysics minor</p>
-            <p>University of Georgia (Intended Graduation - May 2025)</p>
-        </section>
-        <h2>Contact Information</h2>
-        <section class = "contact-section">            
-            <p><a href = "./contact.html">Email Me!</a></p>
-            <p><a href="https://www.linkedin.com/in/sheevpatel/">Let's connect!</a></p>
-            <p><a href="resume.pdf">Resume</a></p>
-        </section>
-    </main>
+        <div class = "card">
+            <img src = "images/Quantum-computing-featured-image.jpg" alt = "Experience" class = "ExpPic" width = 100% height ="150">
+            <h3>Leadership and Experience</h3>
+            <dl>
+                <dt>May 2023 - July 2023</dt>
+                <dd>Software Developer & Data Analyst Intern at <a href = "https://georgiadogs.com/sports/football">UGA Football</a> </dd>
+                <dt>September 2023 - December 2023</dt>
+                <dd>Quantum Computing Research Intern at <a href = "https://www.csp.uga.edu/">UGA Center for Simulational Physics</a></dd>
+            </dl>
+        </div>
+        
+        <div class = "card">
+            <img src = "images/shutterstock_1687431796.jpg" alt = "skills" class = "skillsPic" width = 100% height ="150">
+            <h3>Skills</h3>
+            <dl>
+                <dt>Software Development</dt>
+                <dd>⭐️⭐️⭐️⭐️</dd>
+                <dt>Git + Github</dt>
+                <dd>⭐️⭐️⭐️</dd>
+                <dt>Data Structures</dt>
+                <dd>⭐️⭐️⭐️</dd>
+            </dl>
+        </div>
+        </div>
 
+    </section>
     <footer>
         <a href = "./contact.html">&#169;Sheev Patel</a>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // If you decide to add any future JavaScript, you can include it here.
-        });
-    </script>
 </body>
-
 </html>

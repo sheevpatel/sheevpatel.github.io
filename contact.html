@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-contact.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Universe-Log.png" type="image/png">
     <title>Contact Sheev</title>
 </head>
 <body>
     <nav>
         <p><a href = "./index.html">About Sheev</a></p>
     </nav>
-    <h1>Contact Sheev</h1>
-    <p>Athens, GA</p>
-    <p>(931) 581-1821</p>
+    <div class = "contant-info">
+            <h1 class="general-info2">Contact Sheev</h1>
+            <p class = "general-info2">580 E Broad St<br>Athens, GA<br>30601</p>
+            <p class = "general-info2">(931) 581-1821 <br> <a href="https://www.linkedin.com/in/sheevpatel/">Linkedin</a></p>
+            
+    </div>
+
+    
     <hr>
-    <form action="mailto:sheevp123@gmail.com" method="post">
-        <label for="name">Name:</label>
-        <input type = "text" id = "name" name = "name">
-        <br>
-        <label for="email">Email:</label>
-        <input type = "email" id = "email" name = "email">
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name ="Message" rows="2" columns="20"></textarea>
-        <br>
-        <input type = "submit" id = "submit" name ="submit">
-    </form>
+    <div class = "one-col">
+
+        <div class = "card">
+            <img src="images/mail2.png" alt="mail symbol" width =100% height =150>
+            <form action="mailto:sheevp123@gmail.com" method="post">
+                <label for="name">Name:</label>
+                <input type = "text" id = "name" name = "name">
+                <br>
+                <label for="email">Email:</label>
+                <input type = "email" id = "email" name = "email">
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name ="Message" rows="2" columns="20"></textarea>
+                <br>
+                <input type = "submit" id = "submit" name ="submit">
+            </form>
+        </div>
+    </div>
     
     <footer>
         <a href = "./index.html">&#169;Sheev Patel</a>
