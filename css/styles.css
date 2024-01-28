@@ -1,0 +1,250 @@
+
+body {
+    margin: 0px;
+    background-color: #585052;
+    
+}
+
+nav {
+    
+    background-color: #39586f;
+    border-style: solid;
+    display: flex;
+    flex-wrap: nowrap;    
+    justify-content: right;    
+    font-family: "Bungee Inline";
+    font-size: medium;
+    
+
+}
+
+nav a{
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    color: whitesmoke;
+}
+
+footer {
+    background-color: #39586f;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+footer a{
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Bungee Inline";
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer a:hover{
+    color: whitesmoke;    
+}
+
+.general-info, .content{
+    background-color: #585052;
+    padding: 25px 50px 10px 50px;
+    font-family: "Antonio";
+    font-size:large;
+    color: black;
+    text-align: center;
+    
+}
+
+
+
+.general-info, .content a{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.content a:hover{
+    color: whitesmoke;
+}
+
+
+
+.general-info img{
+    position: absolute;
+    width: 20%;
+    border: 0px solid #333;
+    border-radius: 10px;
+
+}
+
+.GalaxyLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 200px;
+    width: 40px;
+}
+
+.headshot{
+    border-radius: 1000px;
+    margin-top: 50px;
+    border-color: #333;
+    border-style: inset;
+    height: 100px;
+    width: 100px;
+}
+
+.central {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 150px;
+    width: 50px;
+}
+
+
+
+
+hr{
+    border-top: 1px dashed #7e8489;
+    border-radius: 1px;
+    display: block;
+    margin-top: 80px;
+    border-color: #7e8489;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(30, 69, 132, 0.1);
+    transition: 0.2s;
+    background-color:#39586f;
+    border-radius: 7px;
+    margin: 30px auto;
+    width: fit-content;
+    
+
+}
+
+.card img {
+    box-shadow: 0px 4px 8px rgba(30, 69, 132, 0.1);
+    transition: 0.4s;
+    background-color:#39586f;
+    border-radius: 7px;
+    
+    
+}
+ 
+.card:hover{
+    box-shadow: 0 4px 8px #b7c7d4;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card ul li {
+    list-style:circle;
+    margin: 3px;
+}
+
+.card dl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.card dt {
+    font-weight: bold;
+}
+
+.card dd {
+    display: grid;
+    justify-content: center;
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.one-col{
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: "Antonio";
+    
+
+}
+
+.card form input {
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+}
+.one-col form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 200px;
+    padding: 25px 50px 10px 50px;
+}
+
+.one-col form label {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.general-info2{
+    background-color: #585052;
+    padding: 25px 50px 10px 50px;
+    font-family: "Antonio";
+    
+    color: black;
+    text-align: center;
+
+}
+
+
+
+.general-info2 a{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+
+}
+
+
+
+
+.general-info2 img{
+    position: absolute;
+    width: 20%;
+    border: 0px solid #333;
+    border-radius: 10px;
+
+}
+
+.general-info2 a:hover{
+    color: whitesmoke;
+    text-decoration:underline;
+}
