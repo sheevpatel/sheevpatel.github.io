@@ -14,10 +14,10 @@
   }
  */
 
-body {
+ body {
     margin: 0px;
     
-    background-image: url("/images/i5rC6Gc.png");
+    background-image: url("/cv/images/i5rC6Gc.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -26,6 +26,12 @@ body {
 nav {
     
     background-color: #39586f;
+
+    background-image: url("/cv/images/neural.png");
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+
     border-style: solid;
     display: flex;
     flex-wrap: nowrap;    
@@ -37,7 +43,7 @@ nav {
 }
 
 nav a{
-    color:rgb(0, 0, 0);
+    color: #b7c7d4;
     font-size: 16px;
     margin-right: 20px;
 }
@@ -48,14 +54,22 @@ nav a:hover{
 
 footer {
     background-color: #39586f;
+
+    background-image: url("/cv/images/neural.png");
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+
     border-style: solid;
     display: flex;
     justify-content: center;
     margin-top: auto;
+
+    
 }
 
 footer a{
-    color:rgb(0, 0, 0);
+    color: #b7c7d4;
     font-size: 16px;
     font-family: "Bungee Inline";
     margin-top: 7px;
@@ -130,11 +144,21 @@ footer a:hover{
     width: 50px;
 }
 
+#skills {
+    width: 277.66px;
+}
 
+#skills ul {
+    margin-left: 20px;
+}
+
+#lang ul{
+    margin-left: 20px;
+}
 
 
 hr{
-    border-top: 1px dashed #7e8489;
+    border-top: 1px  #7e8489;
     border-radius: 1px;
     display: block;
     margin-top: 80px;
@@ -148,6 +172,8 @@ hr{
     border-radius: 7px;
     margin: 30px auto;
     width: fit-content;
+    text-align: center;
+    
     
 
 }
@@ -174,14 +200,18 @@ hr{
 
 
 .card ul {
-    display: flex;
+    display: table;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    
 }
 
 .card ul li {
     list-style:circle;
-    margin: 3px;
+    text-align:left;
+    margin: 0 auto;
+    
 }
 
 .card dl {
@@ -189,10 +219,16 @@ hr{
     flex-direction: column;
     gap: 10px;
     padding: 0;
+    margin-right: 20px;
+
+    
+
 }
 
 .card dt {
     font-weight: bold;
+    margin-left: 20px;
+
 }
 
 .card dd {
@@ -264,4 +300,3 @@ hr{
     color: whitesmoke;
     text-decoration:underline;
 }
-
