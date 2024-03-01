@@ -27,7 +27,7 @@ nav {
     
     background-color: #39586f;
 
-    background-image: url("/cv/images/neural.png");
+    background-image: url("/images/neural.png");
     background-attachment: fixed;
     background-size: 50%;
     background-position: center;
@@ -55,7 +55,7 @@ nav a:hover{
 footer {
     background-color: #39586f;
 
-    background-image: url("/cv/images/neural.png");
+    background-image: url("/images/neural.png");
     background-attachment: fixed;
     background-size: 50%;
     background-position: center;
